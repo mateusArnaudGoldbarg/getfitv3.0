@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/getfit_logo" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:autoText="false"
+        android:fontFamily="@font/courgette"
+        android:gravity="center"
+        android:text="@string/john_doe"
+        android:textColor="#454343"
+        android:textColorHighlight="#302F2F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="411dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username">
+
+        <TextView
+            android:id="@+id/prof_height"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:text="@string/_0_m"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="@string/weight"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/prof_weight"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="@string/bmi"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/prof_bmi"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="@string/calories"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/prof_cal"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/prof_cal"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:text="@string/_0_cal"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prof_bmi" />
+
+        <TextView
+            android:id="@+id/prof_bmi"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:text="@string/_0"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prof_weight" />
+
+        <TextView
+            android:id="@+id/prof_weight"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:text="@string/_0_kg"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prof_height" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="@string/height"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/prof_height"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="21dp"
+            android:layout_height="22dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_dialog_info"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="89dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/add_meal"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/main_button"
+        android:drawableStart="@drawable/baseline_restaurant_24"
+        android:drawableLeft="@drawable/baseline_restaurant_24"
+        android:onClick="openInsertMeal"
+        android:paddingLeft="10dp"
+        android:paddingRight="14dp"
+        android:text="@string/add_meal"
+        android:textColor="@color/ButtonText"
+        app:layout_constraintEnd_toStartOf="@+id/add_weight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <Button
+        android:id="@+id/add_weight"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:background="@drawable/main_button"
+        android:drawableStart="@drawable/baseline_monitor_weight_24"
+        android:drawableLeft="@drawable/baseline_monitor_weight_24"
+        android:paddingLeft="10dp"
+        android:paddingRight="7dp"
+        android:onClick="openInsertWeight"
+        android:text="@string/add_weight"
+        android:textColor="@color/ButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <Button
+        android:id="@+id/history_btn"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:background="@drawable/main_button"
+        android:drawableStart="@drawable/baseline_insights_24"
+        android:drawableLeft="@drawable/baseline_insights_24"
+        android:includeFontPadding="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="34dp"
+        android:onClick="openHistory"
+        android:text="@string/history"
+        android:textColor="@color/ButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_meal" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/baseline_logout_24"
+        android:onClick="logoutUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

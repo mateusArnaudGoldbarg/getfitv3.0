@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main colors used in the application -->
+    <color name="PrimaryGreen">#6AA84F</color>
+    <color name="PrimaryDarkGreen">#578740</color>
+    <color name="AccentColor">#6AA84F</color>
+    <color name="ButtonText">#FFFFFF</color>
+</resources>
