@@ -84,6 +84,8 @@ public class InsertMealActivity extends AppCompatActivity
             // Resetting the first press value
             first_press = true;
 
+            Message.message(InsertMealActivity.this, "Calories inserted");
+
             // Redirection the user to the main page
             this.backToProfile();
         }

@@ -150,13 +150,18 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
-            android:layout_width="21dp"
-            android:layout_height="22dp"
+            android:id="@+id/infromation"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
             android:clickable="true"
-            app:srcCompat="@android:drawable/ic_dialog_info"
-            tools:layout_editor_absoluteX="133dp"
-            tools:layout_editor_absoluteY="89dp" />
+            android:onClick="OpenDialog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.621"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -164,9 +169,11 @@
         android:id="@+id/add_meal"
         android:layout_width="138dp"
         android:layout_height="45dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginLeft="63dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
         android:background="@drawable/main_button"
         android:drawableStart="@drawable/baseline_restaurant_24"
         android:drawableLeft="@drawable/baseline_restaurant_24"
@@ -185,14 +192,14 @@
         android:layout_width="138dp"
         android:layout_height="45dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginRight="63dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
         android:background="@drawable/main_button"
         android:drawableStart="@drawable/baseline_monitor_weight_24"
         android:drawableLeft="@drawable/baseline_monitor_weight_24"
+        android:onClick="openInsertWeight"
         android:paddingLeft="10dp"
         android:paddingRight="7dp"
-        android:onClick="openInsertWeight"
         android:text="@string/add_weight"
         android:textColor="@color/ButtonText"
         app:layout_constraintEnd_toEndOf="parent"

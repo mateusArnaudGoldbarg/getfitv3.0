@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.getfitv30.R;
+import com.example.getfitv30.logic.MyDialog;
 import com.example.getfitv30.logic.Profile;
 
 import java.util.Map;
@@ -17,9 +19,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ProfileActivity extends AppCompatActivity
 {
+    private Button information;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        information = (Button) findViewById(R.id.infromation);
 
         setContentView(R.layout.profile_activity);
 
@@ -29,6 +33,13 @@ public class ProfileActivity extends AppCompatActivity
 
         Map<String, String> user_data = this.getUserData(uid);
         this.fillUserData(user_data);
+
+    }
+
+    public void OpenDialog(View view){
+        MyDialog dia = new MyDialog();
+        dia.show(getSupportFragmentManager(),"asdasdasd");
+
     }
 
     // Gets the user data for a given user id
